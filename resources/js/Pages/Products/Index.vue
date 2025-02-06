@@ -27,6 +27,11 @@ defineProps({
                     <li v-for="category in categories" :key="category.id" class="p-2 hover:bg-gray-300 rounded-r-lg duration-200 cursor-pointer">
                         <Link :href="'/products/' + category.id" class="text-black">{{ category.name }}</Link>
                     </li>
+                    <p class="flex justify-center">_____________________________</p>
+                    <li class="p-2 hover:bg-gray-300 rounded-r-lg duration-200 cursor-pointer">
+                        <Link href="/categories" >Go to Categories</Link>
+                    </li>
+
                 </ul>
             </nav>
         </div>
